@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <title>E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-bar">
+      <div class="iconmenu-logo-container">
+        <img src="images/icon-menu.svg" alt="menu" id="icon-menu">
+        <img src="images/logo.svg" alt="logo icon" id="logo">
+      </div>
+
+      <div class="nav-link-container">
+        <img src="images/icon-close.svg" alt="close menu" id="icon-close">
+  
+        <ul class="nav-links">
+          <li><a href="">Collections</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="icon-cart-avatar">
+      <div class="icon-cart-container">
+        <img src="images/icon-cart.svg" alt="add-to-cart" id="icon-cart"> <span class="cart-total-items"></span>
+      </div>
+      <img src="images/image-avatar.png" alt="profile-pics" id="avatar">
+    </div>
+  </nav>
+  
+  <!--Cart container-->
+  <section class="cart-container-section">
+    <div class="cart">
+      <div class="cart-heading">Cart</div>
+      <div class="empty-basket">Your cart is empty</div>
+      <div class="cart-item-present">
+        <div class="cart-items">
+          <div class="thumbnail-contents">
+            <img src="images/image-product-1-thumbnail.jpg" alt="thumbnail" class="img-thumbnail">
+            <div class="content">
+              <div class="product-name">Autumn Limited Edition...</div>
+              <div class="item-cost"> <span id="cart-sales-price"> <!--sales Price--> </span> x <span id="no-of-times"> <!--no of times--> </span> &nbsp; <span class="total-cost">$<span id="cart-total-cost"><!--cart total cost text--><span></span></div>
+            </div>
+          </div>
+    
+          <img src="images/icon-delete.svg" alt="delete" class="icon-delete">
+        </div>
+  
+        <div class="cart-btn-container"><button class="cart-btn">Checkout</button></div>
+      </div>
+    </div>
+  </section>
+  
+
+  <main>
+    <section class="product-img-thumbnail">
+      <section class="hero-img-container">
+        <img src="images/image-product-1.jpg" alt="" id="hero-img">
+  
+        <div class="icon-previous-next">
+          <img src="images/icon-previous.svg" alt="<" class="view prev">
+          <img src="images/icon-next.svg" alt=">" class="view next">
+        </div>
+      </section>
+
+      <section class="thumbnail-container">
+        <div class="product-thumbnails">
+          <img src="images/image-product-1-thumbnail.jpg" alt="" class="product-thumbnail 0">
+          <img src="images/image-product-2-thumbnail.jpg" alt="" class="product-thumbnail 1">
+          <img src="images/image-product-3-thumbnail.jpg" alt="" class="product-thumbnail 2">
+          <img src="images/image-product-4-thumbnail.jpg" alt="" class="product-thumbnail 3">
+        </div>
+      </section>
+    </section>
+
+    <section class="hero">
+      <div class="company-name">Sneaker Company</div>
+      <div class="heading">Fall Limited Edition Sneakers</div>
+      <p class="description">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+
+      <div class="product-price-container">
+        <div class="salesprice-discountrate">
+          <span id="sales-price"> <!--sales price--> </span>
+          <span class="discount-rate">50%</span>
+        </div>
+
+        <div id="cost-price"> <!--cost Price--> </div>
+      </div>
+
+      <div class="operations-btn">
+        <div class="add-minus-item-container">
+          <img src="images/icon-minus.svg" alt="-" class="minus operation">
+          <span id="item-count">0</span>
+          <img src="images/icon-plus.svg" alt="+" class="add operation">
+        </div>
+  
+        <button id="add-to-cart-btn">
+          <img src="images/icon-cart.svg" alt="" class="icon-cart">
+          <span class="add-to-cart-text">Add to cart</span>
+        </button>
+      </div>
+
+    </section>
+  </main>
+
+  <!--JavaScript-->
+  <script src="script.js"></script>
+  
+</body>
+</html>
